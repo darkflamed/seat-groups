@@ -122,6 +122,8 @@ class SeatGroupsController extends Controller
     {
         $all_available_skills = InvType::whereIn('groupID', InvGroup::select('groupID')->where('categoryID', 16)->where('groupID', '!=', 505)->get()->toArray())->orderBy('typeName')->get();
 
+        $all_available_ships = InvType::whereIn('groupID', InvGroup::select('groupID')->where('categoryID', 6)->where('groupID', '!=', 29)->get()->toArray())->orderBy('typeName')->get();
+
         $all_available_alliances = $get_alliance_list_action->execute([
             'seatgroup_id' =>$id,
         ]);
@@ -138,7 +140,7 @@ class SeatGroupsController extends Controller
         $available_seatgroups = SeatGroup::whereNotIn('id', $seatgroup->children->pluck('id')->push($id)->toArray())->get();
         $all_groups = Group::all();
 
-        return view('seatgroups::edit', compact('seatgroup', 'id', 'all_corporations', 'roles', 'corporations', 'all_groups', 'all_corporations_for_title', 'available_seatgroups', 'all_available_alliances', 'all_available_skills'));
+        return view('seatgroups::edit', compact('seatgroup', 'id', 'all_corporations', 'roles', 'corporations', 'all_groups', 'all_corporations_for_title', 'available_seatgroups', 'all_available_alliances', 'all_available_skills', 'all_available_ships'));
     }
 
     /**

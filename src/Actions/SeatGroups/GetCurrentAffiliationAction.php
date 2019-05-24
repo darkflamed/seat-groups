@@ -71,6 +71,16 @@ class GetCurrentAffiliationAction
             ]);
         });
 
+        $seatgroup->ships->each(function ($ship) use ($affiliations, $seatgroup) {
+            $shipType = InvType::find($ship->ship_id);
+
+            $affiliations->push([
+                'seatgroup_id' => $seatgroup->id,
+                'ship_id' => $ship->ship_id,
+                'name' => $shipType->typeName,
+            ]);
+        });
+
         return $affiliations;
     }
 }

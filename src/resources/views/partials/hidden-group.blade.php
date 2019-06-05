@@ -6,7 +6,7 @@
       </div>
       <div class="box-body">
         {{$seatgroup->description}} <br>
-        Members: {{str_limit($seatgroup->member->map(function($group) { return $group->main_character->name;})->implode(', '),42)}}
+        Members: {{str_limit($seatgroup->member->map(function($group) { return $group->main_character->name ?? 'Main Not Set';})->implode(', '),42)}}
       </div>
     </div>
 

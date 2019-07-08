@@ -112,9 +112,11 @@ class SeatGroupsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int                                                                           $id
+     * @param int                                                                            $id
      *
      * @param \Herpaderpaldent\Seat\SeatGroups\Actions\Corporations\GetCorporationListAction $action
+     *
+     * @param \Herpaderpaldent\Seat\SeatGroups\Actions\Alliances\GetAllianceListAction       $get_alliance_list_action
      *
      * @return \Illuminate\Http\Response
      */
@@ -125,22 +127,25 @@ class SeatGroupsController extends Controller
         $all_available_ships = InvType::whereIn('groupID', InvGroup::select('groupID')->where('categoryID', 6)->where('groupID', '!=', 29)->get()->toArray())->orderBy('typeName')->get();
 
         $all_available_alliances = $get_alliance_list_action->execute([
-            'seatgroup_id' =>$id,
+            'seatgroup_id' => $id,
         ]);
+
         $all_corporations = $action->execute([
-            'seatgroup_id' =>$id,
-            'origin' => 'SeatGroupsController',
+            'seatgroup_id' => $id,
+            'origin'       => 'SeatGroupsController',
         ]);
+
         $all_corporations_for_title = $action->execute([
-            'seatgroup_id' =>$id,
-            'origin' => 'corporation-tile-form',
+            'seatgroup_id' => $id,
+            'origin'       => 'corporation-tile-form',
         ]);
+
         $roles = Role::all();
         $seatgroup = SeatGroup::find($id);
         $available_seatgroups = SeatGroup::whereNotIn('id', $seatgroup->children->pluck('id')->push($id)->toArray())->get();
         $all_groups = Group::all();
 
-        return view('seatgroups::edit', compact('seatgroup', 'id', 'all_corporations', 'roles', 'corporations', 'all_groups', 'all_corporations_for_title', 'available_seatgroups', 'all_available_alliances', 'all_available_skills', 'all_available_ships'));
+        return view('seatgroups::edit', compact('seatgroup', 'id', 'all_corporations', 'roles', 'all_groups', 'all_corporations_for_title', 'available_seatgroups', 'all_available_alliances', 'all_available_skills', 'all_available_ships'));
     }
 
     /**

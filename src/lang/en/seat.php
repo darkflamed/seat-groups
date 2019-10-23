@@ -8,16 +8,16 @@
 
 return [
 
-    'seat_groups'           => 'SeAT Groups',
+    'seat_groups'           => 'Group Manager',
     'seat_groups_dashboard' => 'Dashboard',
 
-    'seat_groups_autogroup' => 'Auto SeAT Groups',
-    'seat_groups_autogroup_description' => 'To these SeAT Groups you are automatically assigned based on your corporation membership',
+    'seat_groups_autogroup' => 'Auto Groups',
+    'seat_groups_autogroup_description' => 'These Groups you are automatically assigned based on your Skills, Corporation and Alliance ',
 
-    'seat_groups_opengroup' => 'Open SeAT Groups',
-    'seat_groups_opengroup_description' => 'In these SeAT Groups you can freely opt-in and opt-out as you wish.',
+    'seat_groups_opengroup' => 'Opt-in Groups',
+    'seat_groups_opengroup_description' => 'In these Groups you can freely opt-in and opt-out as you wish.',
 
-    'seat_groups_managedgroup'             => 'Managed SeAT Groups',
+    'seat_groups_managedgroup'             => 'Managed Groups',
     'seat_groups_managedgroup_description' => 'Here you can apply for certain groups. The managers of this group will approve or deny your request.',
     'seat_groups_manager'                  => 'Manager',
     'seat_join_opengroup'                  => 'Opt in',
@@ -29,23 +29,23 @@ return [
     'seat_accept_managedgroup'             => 'Accept',
     'seat_removefrom_managedgroup'         => 'Remove',
     'manage_members'                       => 'Manage Members',
-    'available_seatgroups'                 => 'Available SeAT Groups as Manager',
+    'available_seatgroups'                 => 'Available Groups as Manager',
 
-    'seat_groups_hiddengroup' => 'Hidden SeAT Group',
+    'seat_groups_hiddengroup' => 'Hidden Group',
     'seat_groups_user'        => 'User',
     'seat_groups_adduser'     => 'Add User',
 
     'seat_groups_create'      => 'Create',
-    'seat_groups_create_new'  => 'Create a new SeAT Group',
+    'seat_groups_create_new'  => 'Create a new Group',
     'seat_groups_name'        => 'Name',
-    'seat_groups_description' => 'SeAT Group Description',
-    'seat_groups_type'        => 'Select SeAT Group Type',
-    'seat_groups_role'        => 'Select corresponding SeAT Role',
-    'seat_groups_add'         => 'Add new SeAT Group',
+    'seat_groups_description' => 'Group Description',
+    'seat_groups_type'        => 'Select Group Type',
+    'seat_groups_role'        => 'Select corresponding Role',
+    'seat_groups_add'         => 'Add new Group',
 
-    'seat_groups_edit'    => 'Add new SeAT Group',
+    'seat_groups_edit'    => 'Add new Group',
     'seat_groups_editing' => 'Editing',
-    'seat_groups_update'  => 'Update SeAT Group',
+    'seat_groups_update'  => 'Update Group',
 
     'seat_groups_about' => 'About',
 

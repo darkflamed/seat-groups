@@ -8,18 +8,16 @@
 
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h3 class="panel-title">SeAT-Groups</h3>
+      <h3 class="panel-title">Group Manager</h3>
     </div>
     <div class="panel-body">
       <div class="box-body">
 
         <legend>Thank you</legend>
 
-        <p>Since SeAT 3.0 beta has launched SeAT Groups has been downloaded almost 400 times. I am very content that my package is being used and supports you and your members.</p>
+        <p>Since SeAT 3.0 beta has launched Group Manager has been downloaded almost 400 times. I am very content that my package is being used and supports you and your members.</p>
 
-        <p>As you might know, <code>SeAT</code> and <code>SeAT-Groups</code> are OpenSource Projects which are available free of charge. However, programming takes up a lot of time which keeps me away from the game.</p>
-
-        <p>If you like <code>SeAT-Groups</code>, i highly appreciate ISK Donations to <a href="https://evewho.com/pilot/Herpaderp%20Aldent/"> {!! img('character', 95725047, 64, ['class' => 'img-circle eve-icon small-icon']) !!} Herpaderp Aldent</a></p>
+        <p>As you might know, <code>SeAT</code> and <code>Group Manager</code> are OpenSource Projects which are available free of charge. However, programming takes up a lot of time which keeps me away from the game.</p>
 
         </div>
     </div>
@@ -36,7 +34,7 @@
 
       <legend>Bugs and issues</legend>
 
-      <p>If you find something is not working as expected, please don't hesitate and contact me. Either use SeAT-Slack or submit an <a href="https://github.com/herpaderpaldent/seat-groups/issues/new">issue on Github</a></p>
+      <p>If you find something is not working as expected, please don't hesitate and contact <a href="https://evewho.com/character/300139164/"> {!! img('character', 300139164, 64, ['class' => 'img-circle eve-icon small-icon']) !!} J0HN SHEPPARD</a></p>
 
     </div>
   </div>

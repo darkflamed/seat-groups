@@ -93,7 +93,7 @@ class SeatGroupsController extends Controller
         $seat_group = $action->execute($request->all());
 
         return redirect()->route('seatgroups.edit', $seat_group->id)
-            ->with('success', 'SeAT-Group has been added');
+            ->with('success', 'Group has been added');
 
     }
 
@@ -178,7 +178,7 @@ class SeatGroupsController extends Controller
         $seat_group->role()->sync($role_ids);
 
         return redirect()->back()
-            ->with('success', 'SeAT-Group has been updated');
+            ->with('success', 'Group has been updated');
     }
 
     /**
@@ -193,7 +193,7 @@ class SeatGroupsController extends Controller
 
         if ($action->execute($request->all())) {
             return redirect()->route('seatgroups.index')
-                ->with('success', 'SeAT-Group has been deleted');
+                ->with('success', 'Group has been deleted');
         }
 
         return redirect()->back()
@@ -213,7 +213,7 @@ class SeatGroupsController extends Controller
         Artisan::queue('seat-groups:users:update')->onQueue('high');
 
         return redirect()->back()
-            ->with('success', 'SeAT Group update scheduled. Check back in a few moments');
+            ->with('success', 'Group update scheduled. Check back in a few moments');
 
     }
 }

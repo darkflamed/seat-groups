@@ -1,5 +1,5 @@
 # seat-groups
-With this [SeAT](https://github.com/eveseat/seat) Package you can create `auto`, `opt-in`, `managed` and `hidden` groups 
+With this Package you can create `auto`, `opt-in`, `managed` and `hidden` groups 
 which correlate to SeAT-Roles.
 
 [![Latest Stable Version](https://poser.pugx.org/herpaderpaldent/seat-groups/v/stable)](https://packagist.org/packages/herpaderpaldent/seat-groups)
@@ -10,7 +10,7 @@ which correlate to SeAT-Roles.
 [![License](https://poser.pugx.org/herpaderpaldent/seat-groups/license)](https://packagist.org/packages/herpaderpaldent/seat-groups)
 [![Total Downloads](https://poser.pugx.org/herpaderpaldent/seat-groups/downloads)](https://packagist.org/packages/herpaderpaldent/seat-groups)
 
-***Important**: seat-groups are work in progress and certainly have some bugs
+***Important**: Group Manager is a work in progress and certainly have some bugs
 please do report any findings to seat-slack and report it as an issue*
 
 ## Installation
@@ -27,7 +27,7 @@ please do report any findings to seat-slack and report it as an issue*
 
 ---
 
-## SeAT Groups
+## Group Manager
 
 ### auto group
 Members of set corporation are getting assigned the corresponding roles
@@ -58,7 +58,7 @@ This seat group is for hidden groups f.e. CEO. This group is only shown on the o
 Make sure that all of your usergroups have a main_character set
 
 ### I just updated SeAT Groups but the fix is not working
-Restart supervisor or `seat-worker` container to load the new code to workers.
+Restart supervisor or `worker` container to load the new code to workers.
 
 ### I have set an affiliation but it isn't shown
 Make sure you are running the latest version. Later versions interfered with AdBlockers. Disable your adblocker temporally as work around and update.
@@ -66,10 +66,5 @@ Make sure you are running the latest version. Later versions interfered with AdB
 # Contributions
 Open Source is best when supported by a community. Any size of contribution is **very** appreciated. A little hall of fame for your code-contribution: 
 
- ![Contributors of (herpaderpaldent) seat-groups](https://contrichart.io/charts/herpaderpaldent/seat-groups?cols=2&style=square)
-
-# Donations
-
-If you like SeAT Groups, i highly appreciate ISK Donations to Herpaderp Aldent.
 
 

@@ -1,6 +1,6 @@
 <li class="pull-right">
   <a href="" class="text-muted" data-toggle="modal" data-target="#SeATGroupCreate">
-    <i class="fa fa-plus-square" data-toggle="tooltip" title="Add new SeAT Group" style="color:green"></i>
+    <i class="fa fa-plus-square" data-toggle="tooltip" title="Add new Group" style="color:green"></i>
   </a>
 </li>
 
@@ -19,14 +19,14 @@
             <div class="col-md-12"></div>
             <div class="form-group col-md-12">
               <label for="name">{{trans('seatgroups::seat.seat_groups_name')}}</label>
-              <input type="text" class="form-control" name="name" placeholder="SeAT-Group Name" pattern=".{5,}" required title="5 characters minimum">
+              <input type="text" class="form-control" name="name" placeholder="Group Name" pattern=".{5,}" required title="5 characters minimum">
             </div>
           </div>
           <div class="row">
             <div class="col-md-12"></div>
             <div class="form-group col-md-12">
               <label for="description">{{trans('seatgroups::seat.seat_groups_description')}}</label>
-              <textarea type="text" class="form-control" rows="5" name="description" placeholder="SeAT-Group Description" minlength="10" required></textarea>
+              <textarea type="text" class="form-control" rows="5" name="description" placeholder="Group Description" minlength="10" required></textarea>
             </div>
           </div>
           <div class="row">
